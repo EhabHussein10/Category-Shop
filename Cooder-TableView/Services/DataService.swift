@@ -2,7 +2,7 @@
 //  DataService.swift
 //  Cooder-TableView
 //
-//  Created by Mac on 4/29/19.
+//  Created by Ehab Eletreby on 4/29/19.
 //  Copyright © 2019 Ehab Eletreby. All rights reserved.
 //
 
@@ -44,7 +44,6 @@ class DataService {
     
     func getCategories () -> [Category] {
         return categories
-        
     }
     
     func getProducts(forCategoryTitle title:String) -> [Product] {
@@ -65,14 +64,16 @@ class DataService {
     func getShirts () -> [Product] {
         return shirts
     }
+    
     func getHoodies () -> [Product] {
         return hoodies
     }
+    
     func getHats () -> [Product] {
         return hats
     }
+    
     func getDigitalGood () -> [Product] {
         return digitalGoods
     }
-    
 }

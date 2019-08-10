@@ -2,7 +2,7 @@
 //  CategoriesVC.swift
 //  Cooder-TableView
 //
-//  Created by Mac on 4/29/19.
+//  Created by Ehab Eletreby on 4/29/19.
 //  Copyright © 2019 Ehab Eletreby. All rights reserved.
 //
 
@@ -10,10 +10,8 @@ import UIKit
 
 class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    
     @IBOutlet weak var categoryTable: UITableView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +19,7 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         categoryTable.delegate = self
         
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count
     }
@@ -47,7 +46,6 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             navigationItem.backBarButtonItem = barButton
             assert(sender as? Category != nil )
             ProductsVC.initProducts(category: sender as! Category)
-            
         }
     }
 }

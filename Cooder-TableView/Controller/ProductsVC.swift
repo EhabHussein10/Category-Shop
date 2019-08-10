@@ -2,7 +2,7 @@
 //  ProductsVC.swift
 //  Cooder-TableView
 //
-//  Created by Mac on 5/2/19.
+//  Created by Ehab Eletreby on 5/2/19.
 //  Copyright © 2019 Ehab Eletreby. All rights reserved.
 //
 
@@ -36,8 +36,6 @@ class ProductsVC: UIViewController, UICollectionViewDataSource, UICollectionView
             cell.updateViews(product: product)
             return cell
         }
-        
         return ProductCell()
     }
-
 }

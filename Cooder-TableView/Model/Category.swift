@@ -2,7 +2,7 @@
 //  Category.swift
 //  Cooder-TableView
 //
-//  Created by Mac on 4/29/19.
+//  Created by Ehab Eletreby on 4/29/19.
 //  Copyright © 2019 Ehab Eletreby. All rights reserved.
 //
 
